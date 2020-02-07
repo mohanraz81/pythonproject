@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Archeplay Demo Site</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static',filename='fevicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='demo.css') }}">
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="max-width flexRow">
+            <img alt="Archeplay" src="{{ url_for('static',filename='Ap_logo_1.png') }}" />
+        </div>
+    </header>
+    <main>
+        <section>
+            <h3 class="hero-1">Archeplay Demo Site</h3>
+            <div class="max-width">
+                <div class="plans-section flexRow">
+					<div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[0].image}}"></div>
+                        <div class="prod-name">{{ name[0].name }}</div>
+                        <div class="prod-desc">{{ name[0].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+					<div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[1].image}}"></div>
+                        <div class="prod-name">{{ name[1].name }}</div>
+                        <div class="prod-desc">{{ name[1].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                    <div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[2].image}}"></div>
+                        <div class="prod-name">{{ name[2].name }}</div>
+                        <div class="prod-desc">{{ name[2].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+					<div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[3].image}}"></div>
+                        <div class="prod-name">{{ name[3].name }}</div>
+                        <div class="prod-desc">{{ name[3].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                    <div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[4].image}}"></div>
+                        <div class="prod-name">{{ name[4].name }}</div>
+                        <div class="prod-desc">{{ name[4].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+					<div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[5].image}}"></div>
+                        <div class="prod-name">{{ name[5].name }}</div>
+                        <div class="prod-desc">{{ name[5].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                    <div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[6].image}}"></div>
+                        <div class="prod-name">{{ name[6].name }}</div>
+                        <div class="prod-desc">{{ name[6].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+					<div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[7].image}}"></div>
+                        <div class="prod-name">{{ name[7].name }}</div>
+                        <div class="prod-desc">{{ name[7].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                    <div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[8].image}}"></div>
+                        <div class="prod-name">{{ name[8].name }}</div>
+                        <div class="prod-desc">{{ name[8].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+					<div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[9].image}}"></div>
+                        <div class="prod-name">{{ name[9].name }}</div>
+                        <div class="prod-desc">{{ name[9].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                    <div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[10].image}}"></div>
+                        <div class="prod-name">{{ name[10].name }}</div>
+                        <div class="prod-desc">{{ name[10].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+					<div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[11].image}}"></div>
+                        <div class="prod-name">{{ name[11].name }}</div>
+                        <div class="prod-desc">{{ name[11].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                    <div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[12].image}}"></div>
+                        <div class="prod-name">{{ name[12].name }}</div>
+                        <div class="prod-desc">{{ name[12].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+					<div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[13].image}}"></div>
+                        <div class="prod-name">{{ name[13].name }}</div>
+                        <div class="prod-desc">{{ name[13].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                    <div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[14].image}}"></div>
+                        <div class="prod-name">{{ name[14].name }}</div>
+                        <div class="prod-desc">{{ name[14].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+					<div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[15].image}}"></div>
+                        <div class="prod-name">{{ name[15].name }}</div>
+                        <div class="prod-desc">{{ name[15].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                    <div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[16].image}}"></div>
+                        <div class="prod-name">{{ name[16].name }}</div>
+                        <div class="prod-desc">{{ name[16].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+					<div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[17].image}}"></div>
+                        <div class="prod-name">{{ name[17].name }}</div>
+                        <div class="prod-desc">{{ name[17].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                    <div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[18].image}}"></div>
+                        <div class="prod-name">{{ name[18].name }}</div>
+                        <div class="prod-desc">{{ name[18].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+					<div class="each-plans flexColumn">
+						<div class="prod-image"><img src="/static/{{name[19].image}}"></div>
+                        <div class="prod-name">{{ name[19].name }}</div>
+                        <div class="prod-desc">{{ name[19].description }}</div>
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="fixed"><h6>&copy;Archeplay 2019</h6></footer>
+</body>
+</html>
